@@ -1,6 +1,443 @@
-.App {
-  text-align: center;
+html {
+  background-color: rgb(51, 51, 51);
+  caret-color: transparent;
 }
+
+#menu {
+  background-color: rgba(255, 253, 253, 0.945);
+  -webkit-mask: url(./Icons/menu.svg) no-repeat center;
+  mask: url(./Icons/menu.svg) no-repeat center;
+  mask-size: cover;
+  float: right bottom;
+  width: 50px;
+  height: 100%;
+  transition: 0.5s;
+  margin: 0 3vw 0 0;
+  padding: 1px;
+  position: relative;
+  cursor: pointer;
+}
+
+#linkedin {
+  background-color: rgba(255, 253, 253, 0.945);
+  -webkit-mask: url(./Icons/linkedin.svg) no-repeat center;
+  mask: url(./Icons/linkedin.svg) no-repeat center;
+  mask-size: 50px;
+  height: 50px;
+  width: 50px;
+  margin: 0 0 0 5px;
+  padding: 0;
+  display: inline-block;
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+#codepen {
+  /* background-color: rgb(255, 102, 0); */
+  background-color: rgba(255, 253, 253, 0.945);
+  -webkit-mask: url(./Icons/codepen.svg) no-repeat center;
+  mask: url(./Icons/codepen.svg) no-repeat center;
+  mask-size: 55px;
+  height: 55px;
+  width: 55px;
+  margin: 0 0 0 20px;
+  padding: 0;
+  display: inline-block;
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: 0.4s;
+}
+
+#github {
+  background-color: rgba(255, 253, 253, 0.945);
+  -webkit-mask: url(./Icons/github.svg) no-repeat center;
+  mask: url(./Icons/github.svg) no-repeat center;
+  mask-size: 50px;
+  height: 50px;
+  width: 50px;
+  margin: 0 0 0 20px;
+  padding: 0;
+  display: inline-block;
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: 0.4s;
+}
+
+#email {
+  /* background-color: rgb(255, 196, 0); */
+  background-color: rgba(255, 253, 253, 0.945);
+  -webkit-mask: url(./Icons/email.svg) no-repeat center;
+  mask: url(./Icons/email.svg) no-repeat center;
+  mask-size: 52.5px;
+  height: 52.5px;
+  width: 52.5px;
+  margin: 0 0 0 22.5px;
+  padding: 0;
+  display: inline-block;
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  opacity: 0;
+  transform: translateY(3.5px);
+  transition: 0.4s;
+}
+
+#linkedin:hover {
+  background-color: rgb(243, 57, 57);
+}
+
+#codepen:hover {
+  background-color: rgb(255, 166, 0);
+}
+
+#github:hover {
+  background-color: rgb(102, 223, 54);
+}
+
+#email:hover {
+  background-color: rgb(48, 152, 248);
+}
+
+#menu:hover {
+  background-color: lightblue;
+}
+
+h1 {
+  font-size: 100px;
+  background: -webkit-linear-gradient(left, red, orange, yellow, green, blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 67px 0 0 0;
+}
+
+h2 {
+  font-size: 40px;
+  color: rgba(255, 253, 253, 0.945);
+  margin: 0 3px 10px 4px;
+}
+
+h3 {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.603);
+  margin: 0 3px 20px 5px;
+  max-width: 90%;
+  width: fit-content;
+  border: solid;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 5px;
+  border-left-width: 0;
+  border-style: solid;
+  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, transparent) 1;
+  padding-bottom: 15px;
+}
+
+h4 {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.603);
+  margin: 0 3px 20px 0;
+  max-width: 90%;
+  width: fit-content;
+  padding: 5px;
+  padding-bottom: 15px;
+}
+
+
+
+#welcome h2 {
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+#welcome h3 {
+  animation: fadeInAnimation ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.603);
+  margin: 0 3px 20px 5px;
+  max-width: 90%;
+  width: fit-content;
+  padding-bottom: 15px;
+}
+
+a {
+  font-weight: bold;
+  font-size: 40px;
+  color: rgba(255, 253, 253, 0.945);
+  margin: 0 3px 10px 4px;
+  transition: 0.5s;
+}
+
+.tinyText {
+  font-size: 15px;
+}
+
+a:hover {
+  color: rgb(51, 216, 202);
+  cursor: pointer;
+}
+
+#wrapper {
+  position: fixed;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 100px 0 0 0;
+  border: solid transparent;
+  border-top-width: 30px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 30px;
+  background-image: linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), radial-gradient(farthest-corner at top left, red, orange, yellow, green, blue, indigo, violet, white, white);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: fadeInAnimation ease-in 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#navBar {
+  list-style-type: none;
+  position:absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  height: 75px;
+  max-width: fit-content;
+  overflow: hidden;
+}
+
+#navBar li {
+  float: right;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  min-width: 60px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0 40px 0 0;
+  font-size: 30px;
+  color: rgba(255, 253, 253, 0.945);
+}
+
+#navBar li:hover {
+  color: rgb(51, 216, 202);
+  cursor: pointer;
+}
+
+#welcome, #projects, #education, #awards, #skills{
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 7.5vh 0 0 4vw;
+  scroll-snap-align: start;
+  min-height: 83vh;
+}
+
+#projects, #education, #awards, #skills {
+  padding: 2vh 0 25vh 4vw;
+}
+
+#main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7.5vh;
+  bottom: 0;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: none;
+  scroll-snap-type: y mandatory;
+}
+
+#navBar.mobile {
+  height: 7.5vh;
+}
+
+#wrapper.mobile {
+  border-radius: 20vw 0 0 0;
+  border-top-width: 2.5vw;
+  border-left-width: 2.5vw;
+}
+
+.mobile h1 {
+  font-size: 9vmin;
+  padding-right: 10vw;
+  margin: 67px 0 0 0.5vw;
+}
+.mobile h2 {
+  font-size: 6vmin;
+  padding-right: 10vw;
+}
+.mobile h3 {
+  font-size: 4vmin;
+  padding-right: 10vw;
+}
+.mobile h4 {
+  font-size: 4vmin;
+  padding-right: 10vw;
+}
+.mobile a {
+  font-size: 6vmin;
+} 
+.mobile .tinyText {
+  font-size: 1vmin;
+}
+.mobile #linkedin {
+  mask-size: 7.5vw;
+  height: 7.5vw;
+  width: 7.5vw;
+}
+.mobile #codepen {
+  mask-size: 7.875vw;
+  height: 7.875vw;
+  width: 7.875vw;
+}
+.mobile #github {
+  mask-size: 7.5vw;
+  height: 7.5vw;
+  width: 7.5vw;
+}
+.mobile #email {
+  mask-size: 7.6875vw;
+  height: 7.6875vw;
+  width: 7.6875vw;
+}
+.mobile #menu {
+  mask-size: 7.6875vh;
+  height: 7.6875vh;
+  width: 7.6875vh;
+}
+
+#menuDropdown {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: fit-content;
+  width: 50vw;
+  float: right;
+  background-color: rgb(51, 51, 51);
+  z-index: 2;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 10%;
+  border-width: 5px;
+  border: solid transparent;
+  background-image: linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), radial-gradient(farthest-corner at top left, rgba(255, 0, 0, 0.5), rgba(255, 166, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(76, 0, 130, 0.5), rgba(238, 130, 238, 0.5));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-align: center;
+  transition: 1s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#menuDropdownBackdrop {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  z-index: 1;
+  transition: backdrop-filter 0.5s;
+}
+
+#menuDropdown a {
+  width: 95%;
+  position: relative;
+  display: inline-block;
+  font-size: 9vmin;
+  text-decoration: none;
+  transition: 0s;
+}
+
+#menuContainer {
+  visibility: hidden;
+}
+
+#footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 7.5vh 4vw 0 4vw;
+  scroll-snap-align: start;
+}
+
+#footer h1, #footer h2, #footer h3, #footer h4, footer a {
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+}
+
+#footer h3 {
+  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+}
+
+#footer a {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.mobile #footer a {
+  font-size: 4vmin;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(186, 130, 238); 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(170, 138, 201, 0.651); 
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -13,26 +450,20 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
 }
